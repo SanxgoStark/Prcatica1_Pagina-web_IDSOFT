@@ -1,0 +1,76 @@
+<!--Con HTML se crea la esctructura del sitio web (El esqueleto)-->
+
+<!--Lenguaje de maquetado en el cual los navegadores interpretan los sitios web-->
+
+<!--Etiquetas inicio y cierre (<head></head>)-->
+
+<!--comentario-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Mi primer sitio web</title>
+    <!--Para unir archivo html con css hacerlo dentro head-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body> <!--Dentro de la etiqueta body va todo el contenido que queremos que aparesca dentro del sitio-->
+
+    <!--Aqui el esqueleto-->
+    <div id="main-container"> <!--div es una capa que es inbisible en HTML, no se usar espacio en el id por que se interpreat como dos ids -->
+        <!--El id servira para hacer referencia en el css a esta capa-->
+       <!--La eqtiqueta header sirve para seccionar el sitio web la parte donde vamos a colocar el logo, menu .etc -->
+       <!--id es unico y no se puede repetir-->
+       <header> <!--cabezera-->
+        <div id="menu"> <!--Menu-->
+            <ul> <!--Lista-->
+                <li id="logo"> <!--item-->
+                    <a href="#"><!--Etiqueta para link-->
+                        <!--180px ancho x 180px alto */-->
+                        <img src="img/Logos.png" width="180" height="180"/> <!--Imgen con ruta-->
+                    </a>
+                </li>
+                 
+                <li> <!--item-->
+                    <a href="#"><!--Etiqueta para link-->
+                        Home
+                    </a>
+                </li>
+
+                <li> <!--item-->
+                    <a href="#"><!--Etiqueta para link-->
+                        Features
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <main> <!--Etiqueta contextual: representa el contenido preincipla del sitio-->
+
+            <div class="text">
+                <!--Al coloccar la propiedad class se puede volver  utilizar el nombre de la clase-->
+                <h1><!--(head line) puede ir desde 1 hasta 6 que es el tamaño-->
+                    Servicios digitales XYZ
+                </h1> <!--Titulo-->
+                <p> <!--Parrafo-->
+                    Hacemos tu sueño una realidad
+                </p>
+
+                <p>
+                    <button>Empezar ahora</button>
+                </p>
+
+            </div>
+
+            <div class="image">
+                <!--alto healt, ancho width unidades predeterminadas en pixel-->
+                <img src="img/hand.png" width="650" />
+            </div>
+
+        </main>
+
+       </header>
+    </div>
+
+    
+</body>
+</html>

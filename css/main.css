@@ -1,0 +1,114 @@
+/* Con css se le da al la pagina web ESTILO, color, estructura y formato al contenido */
+/* Para aplicar un stilo a todos los elemntos usar un (*) */
+
+*{
+    padding: 0; /* Me permite añadir un espacio interior en cada elemento */
+    margin: 0; /* Me permite añadir un espacio exterior en cada elemento*/
+    /* border: solid 1px #000000 /* Para checar la estructura de todos nuestros elemnetos */
+}
+
+/* Aplicando estilo a la etiqueta body de html*/
+/* hace referencia a todos los body que encuentre */
+body{
+    background-color: rgb(255, 255, 255); /* Color del fondo */
+    font-family: Arial, Helvetica, sans-serif; /* Tipografia */
+    font-size: 18px;
+}
+
+header{
+    background-image: url(../img/t2.png) ; /* Para colocar una imagen de fondo */
+    /* Aqui utilizar la url con los puntos iniciales para salir de la carpeta y estar en el nivel maximo de navegacion y asi muestre la imagen */ 
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Para abarcar todo el espacio en x (alto) y y (ancho) */
+    height: 100vh; /* Para que la imagen siempre este dimensionada al tamoño de la pantalla */
+    color: aliceblue /* Para cambiar el color de todo el texto */
+}
+
+/* Busca a menu en esta ruta del archivo html */
+#main-container header #menu{
+    /*50px de espacio (ariba,abajo) y 0 (izquierda,derecha)*/
+    padding: 50px 0;
+}
+
+/* Configuracion del menu */
+/* ul para hacer referencia a la lista */
+header #menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* Configuracion de los elemnetos del menu */
+header #menu ul li{ 
+    /* Muestra los elementos en linea del bloque */
+    display: inline-block;
+    padding: 10px; /* Espacio interior a todos los 4 lados */
+    vertical-align: middle; /* Alineacion vertical en medio */
+}
+
+/* Especificaciones para los links */
+header #menu ul li a{
+    color: white;
+    text-decoration: none; /* Para quitar el subrayallo que tienen los links */
+}
+
+/* Ayuda visual para que el usuario distiga que es un link */
+header #menu ul li a:hover{
+    /* :hover es un atributo de estado quiere decir que este estilo se activara cuando el cursor este sobre nuestro link */
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+/* Configuracion para el logo */
+header #menu ul #logo{
+    margin-right: 59%;
+    margin-left: 50px;
+}
+
+/* ********************************** */
+
+#main-container header main{
+    /* tomar en cuenta el tamaño de la pantalla (1366 x 768) */
+    margin: 0 auto; /* Para centrar una capa que tiene un tamaño definido */ /* auto permite que el navegador calcule automaticamente el margen */
+    width: 900px ; /* Ancho */ /* Cambia el tamaño del contenedor */
+}
+
+/* Configurar que el contenido salga en 2 columnas por decirlo */
+#main-container header main div{
+    /* tomar en cuenta el tamaño de la pantalla (1366 x 768) */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Configurar el titulo */
+#main-container header main .text h1{
+    font-size: 60px;
+}
+
+/* Configurar el parrafo */
+#main-container header main .text p{
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+/* Se aplica a todos los botones que tengamos */
+button{
+    background-color: rgb(44, 206, 255);
+    border: 0; /* Sin borde */
+    border-radius: 3px; /* borde radial */
+    color: white;
+    cursor: pointer; /* Para que salga la manita al pasar el cursor por el boton */
+    font-size: 24px;
+    padding: 20px 25px;
+    margin: 40px 0;
+}
+
+/* Efecto al pulsar sobre el boton */
+button:hover{
+    background-color: rgb(0, 255, 213);
+}
+
+/* configurar la imagen */
+#main-container header main .image{
+    text-align: right; /* Alinea el contenido dentro de una capa */    
+    width: 100px; /* esto hace que la capa se extienda esto para mover un poco la imagen */
+}
